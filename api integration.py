@@ -106,13 +106,12 @@ move_to_git_repo()
 # MAGIC %sh
 # MAGIC curl -s -H "Accept: application/vnd.github.VERSION.sha" \
 # MAGIC   https://api.github.com/repos/snehasachu/test-repo/commits/main
-# MAGIC   #https://github.com/snehasachu/test-repo
 
 # COMMAND ----------
 
 # MAGIC %sh
 # MAGIC curl -X GET \
-# MAGIC   -H "Authorization: Bearer dapi112d5c4960d42b176167c3074dcfb12b" \
+# MAGIC   -H "Authorization: Bearer <token>" \
 # MAGIC   -H "Content-Type: application/json" \
 # MAGIC   -d '{
 # MAGIC     "path": "/Workspace/Repos/sneha.ck@databricks.com/test-repo/test_notebook.py"
